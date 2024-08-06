@@ -11,9 +11,7 @@ const { startLocation, skip, deleteFiles, moveFiles } = (argv &&
     "JustForMe",
     "Elzbieta & Vincent",
     `.tmp.driveupload`,
-    `Documents`,
-    `Misc`,
-    `Photos and Videos`,
+    `FilesFromGoogleBotchUp`
   ],
   deleteFiles: [
     /\.dropbox( \(\d+\))?/,
@@ -36,14 +34,14 @@ const { startLocation, skip, deleteFiles, moveFiles } = (argv &&
   moveFiles: [
     {
       src: /.+\.(?:jp(?:e)?g|bmp|mov|png|m4v|mp4|tif|mpg|AVI)/i,
-      dest: `.\\Photos and Videos\\`,
+      dest: `.\\FilesFromGoogleBotchUp\\Photos and Videos\\`,
     },
     {
       src: /.+\.(?:xls(?:x)?|pdf|doc(?:x)?|gif|csv|html|ppt|rtf|gdoc|gsheet|gpx)/i,
-      dest: `.\\Documents\\`,
+      dest: `.\\FilesFromGoogleBotchUp\\Documents\\`,
     },
-    { src: /.+\.(?:ttf)/i, dest: `.\\Misc\\Fonts\\` },
-    { src: /.+\.(?:zip)/i, dest: `.\\Misc\\Archives\\` },
+    { src: /.+\.(?:ttf)/i, dest: `.\\FilesFromGoogleBotchUp\\Misc\\Fonts\\` },
+    { src: /.+\.(?:zip)/i, dest: `.\\FilesFromGoogleBotchUp\\Misc\\Archives\\` },
   ],
 };
 
