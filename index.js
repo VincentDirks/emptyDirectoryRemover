@@ -30,6 +30,8 @@ const { startLocation, skip, deleteFiles, moveFiles } = (argv &&
     /.?\.data/,
     /.?\.ini/,
     /.?\.BUP/,
+    /^[0-9 \()]+$/,
+    /.?\.sk[pb]/,
   ],
   moveFiles: [
     {
